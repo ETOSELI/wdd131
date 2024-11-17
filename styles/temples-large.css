@@ -1,0 +1,25 @@
+/* Adjustments for larger screens */
+@media (min-width: 768px) {
+    #hamburger {
+        display: none;
+    }
+
+    #nav-menu {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns layout */
+        gap: 20px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    footer {
+        font-size: 1rem;
+    }
+}
