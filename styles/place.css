@@ -1,0 +1,164 @@
+/* Root variables for Kenyan flag colors */
+:root {
+    --primary-color: #000000; /* Black */
+    --secondary-color: #c8102e; /* Red */
+    --accent-color: #007a33; /* Green */
+    --background-color: #ffffff; /* White */
+    --font-color: #000; /* Black for text */
+    --border-radius: 10px;
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Reset and general styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: var(--font-color);
+    line-height: 1.5;
+}
+
+header {
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Data and Weather Sections (Overlay) */
+.data,
+.weather {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    box-shadow: var(--box-shadow);
+    width: 25%; /* Fixed width */
+}
+
+.data {
+    top: 20%;
+    left: 5%; /* Align to the left */
+}
+
+.weather {
+    top: 20%;
+    right: 5%; /* Align to the right */
+}
+
+.data h2,
+.weather h2 {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 0.8rem;
+    border-radius: var(--border-radius);
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.data ul,
+.weather ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.data li,
+.weather li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.data li strong,
+.weather li strong {
+    display: inline-block;
+    width: 150px;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1.5rem 0;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+/* Responsive Adjustments */
+@media (min-width: 768px) {
+    .hero {
+        height: 500px; /* Fixed height for desktop view */
+    }
+
+    .hero img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .data {
+        top: 30%; /* Adjusted for desktop */
+        left: 8%;
+    }
+
+    .weather {
+        top: 30%;
+        right: 8%;
+    }
+
+    footer {
+        font-size: 1rem;
+    }
+}
+/* Add blinking animation for the Weather section */
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.weather {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    box-shadow: var(--box-shadow);
+    width: 25%; /* Fixed width */
+    animation: blink 1.5s infinite; /* Apply blinking animation */
+}

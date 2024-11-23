@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenya</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Kenya</h1>
+    </header>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <picture>
+                <source srcset="images/kenya.jpg" media="(min-width: 2086px)">
+                <img src="images/kenyasmall.jpg" alt="Kenyan landscape">
+            </picture>
+        </section>
+
+        <!-- Data Section -->
+        <section class="data">
+            <h2>Data</h2>
+            <ul>
+                <li><strong>Area:</strong> 580,367 sq km</li>
+                <li><strong>Population:</strong> 54,985,698</li>
+                <li><strong>Capital:</strong> Nairobi</li>
+                <li><strong>Languages:</strong> Swahili, English</li>
+                <li><strong>Currency:</strong> Kenyan Shilling</li>
+                <li><strong>Time Zone:</strong> UTC+3</li>
+                <li><strong>Calling Code:</strong> +254</li>
+                <li><strong>Internet TLD:</strong> .ke</li>
+            </ul>
+        </section>
+
+        <!-- Weather Section -->
+        <section class="weather">
+            <h2>Weather</h2>
+            <div class="weather-content">
+                <!-- Weather Icon -->
+                <img class="weather-icon" src="images/weather.svg" alt="Sunny weather icon">
+                <ul>
+                    <li><strong>Temperature:</strong> 20°C</li>
+                    <li><strong>Conditions:</strong> Sunny</li>
+                    <li><strong>Wind:</strong> 10 km/h</li>
+                    <li><strong>Wind Chill:</strong> <span id="wind-chill">N/A</span></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 🦬 Eugene Toseli 🦬 Kenya</p>
+        <p>Last Modification: <span id="last-modified"></span></p>
+    </footer>
+</body>
+</html>
