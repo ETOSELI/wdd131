@@ -57,17 +57,17 @@ header h1 {
     border-radius: var(--border-radius);
     padding: 1rem;
     box-shadow: var(--box-shadow);
-    width: 25%; /* Fixed width */
+    width: 20%; /* Fixed width */
 }
 
 .data {
     top: 20%;
-    left: 5%; /* Align to the left */
+    left: 2%; /* Align to the left */
 }
 
 .weather {
     top: 20%;
-    right: 5%; /* Align to the right */
+    right: 2%; /* Align to the right */
 }
 
 .data h2,
@@ -127,13 +127,13 @@ footer p {
     }
 
     .data {
-        top: 30%; /* Adjusted for desktop */
-        left: 8%;
+        top: 20%; /* Adjusted for desktop */
+        left: 1%;
     }
 
     .weather {
-        top: 30%;
-        right: 8%;
+        top: 40%;
+        right: 1%;
     }
 
     footer {
