@@ -1,0 +1,48 @@
+/* General Styling */
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #F9FAFB; /* Soft neutral background */
+    color: #2F3E46; /* Dark grey for text for better readability */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #3B82F6; /* Modern blue tone */
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+/* Sections */
+section {
+    margin: 1rem auto;
+    padding: 1rem;
+    max-width: 800px;
+    background: white;
+    border: 1px solid #D1D5DB; /* Light grey border */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Typography */
+h1, h2, h3 {
+    font-family: "Playfair Display", serif;
+    color: #3B82F6; /* Same as header for consistency */
+}
+
+p, ul, li {
+    font-family: "Open Sans", sans-serif;
+    color: #374151; /* Slightly lighter grey for body text */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    background-color: #10B981; /* Vibrant teal for contrast */
+    color: white;
+}
