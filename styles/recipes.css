@@ -1,0 +1,143 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background: #f4a261;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+h1, h2 {
+    margin: 0.5rem 0;
+}
+
+/* Recipe Grid */
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.recipe-card {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.recipe-card:hover {
+    transform: scale(1.05);
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.recipe-card h3 {
+    margin: 0.5rem 0;
+}
+
+.recipe-card p {
+    padding: 0 1rem;
+    color: #666;
+}
+
+.recipe-card .save-recipe {
+    background: #e76f51;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.recipe-card .save-recipe:hover {
+    background: #d4573f;
+}
+
+/* Search Section */
+#search-recipes {
+    padding: 2rem;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+#search-form {
+    margin: 1rem auto;
+}
+
+#search-form input {
+    padding: 0.5rem;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+#search-form button {
+    padding: 0.5rem 1rem;
+    background: #2a9d8f;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#search-form button:hover {
+    background: #21867a;
+}
+
+/* Fun Facts */
+.counter-grid {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    background: #264653;
+    color: white;
+}
+
+.counter {
+    text-align: center;
+}
+
+.counter span {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
